@@ -1,0 +1,37 @@
+.button {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	border-radius: 8px;
+	font-weight: bold;
+    cursor: pointer;
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+}
+
+.primary {
+	color: var(--button-text-color);
+	background-color: var(--button-bg-color);
+}
+
+.textOnly {
+	color: var(--button-text-color);
+	background-color: transparent;
+	border: none;
+	.accent {
+		color: var(--accent);
+	}
+}
+
+.defaultColor {
+	--button-text-color: var(--foreground);
+	--button-bg-color: var(--background);
+}
+
+.accent {
+	--button-text-color: var(--foreground);
+	--button-bg-color: var(--accent);
+}

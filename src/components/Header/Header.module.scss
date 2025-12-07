@@ -1,0 +1,25 @@
+.header {
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 40px 0;
+
+
+    .logo {
+        font-family: 'Cormorant';
+        font-size: clamp(24px, 2vw, 30px);
+    }
+
+    .nav {
+        display: flex;
+        gap: clamp(20px, 2vw, 40px);
+        .link {
+            font-weight: bold;
+            font-size: clamp(12px, 2vw, 16px);
+            cursor: pointer;
+        }
+    }
+    
+}
