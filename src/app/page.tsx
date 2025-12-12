@@ -1,11 +1,12 @@
-import { Header } from '@/components/Header/Header'
-import { Intro } from '@/screens/Home/intro/Intro'
-import Image from 'next/image'
+import { Loader } from "@/shared/ui"
+import dynamic from "next/dynamic"
 
-export default function Home() {
+const Home = dynamic(() => import('@/screens/Home/Home').then(mod => mod.Home), {
+	loading: () => <Loader/>,
+})
+
+export default function Page() {
 	return (
-		<div>
-			<Intro />
-		</div>
+		<Home/>
 	)
 }

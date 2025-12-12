@@ -4,22 +4,41 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    padding: 40px 0;
+	padding: 40px 0;
 
+	.logo {
+		font-family: 'Cormorant';
+		font-size: clamp(24px, 2vw, 30px);
+	}
 
-    .logo {
-        font-family: 'Cormorant';
-        font-size: clamp(24px, 2vw, 30px);
-    }
+	.nav {
+		display: flex;
+		gap: clamp(20px, 2vw, 40px);
+		.link {
+			font-weight: bold;
+			font-size: clamp(12px, 2vw, 16px);
+			text-decoration: none;
 
-    .nav {
-        display: flex;
-        gap: clamp(20px, 2vw, 40px);
-        .link {
-            font-weight: bold;
-            font-size: clamp(12px, 2vw, 16px);
-            cursor: pointer;
-        }
-    }
-    
+			cursor: pointer;
+		}
+
+		.link::before {
+			margin-left: auto;
+		}
+
+		.link::after,
+		.link::before {
+			content: '';
+			width: 0%;
+			height: 2px;
+			background: var(--accent);
+			display: block;
+			transition: 0.5s;
+		}
+
+		.link:hover::after,
+		.link:hover::before {
+			width: 100%;
+		}
+	}
 }

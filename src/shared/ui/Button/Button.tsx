@@ -29,11 +29,12 @@ export function Button({
 		className
 	)
 
+	console.log(buttonClassName)
 	return (
 		<button className={buttonClassName} {...otherProps}>
-			{beforeIcon && <span className={styles.icon}>{beforeIcon}</span>}
+			{beforeIcon}
 			{children}
-			{afterIcon && <span className={styles.icon}>{afterIcon}</span>}
+			{afterIcon}
 		</button>
 	)
 }

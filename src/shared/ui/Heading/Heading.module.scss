@@ -1,0 +1,12 @@
+.wrapperHeading {
+	display: flex;
+	align-items: center;
+	.heading {
+		font-size: clamp(14px, 1.5dvw, 20px);
+        font-weight: bold;
+		color: var(--accent);
+	}
+	.image {
+		margin-right: clamp(16px, 1.2dvw, 32px);
+	}
+}

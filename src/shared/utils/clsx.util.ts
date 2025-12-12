@@ -13,7 +13,7 @@ export function clsx(...rest: ClsxProps[]) {
 			else if (typeof item === 'object')
 				return Object.entries(item)
 					.filter(([, value]) => value)
-					.map(([key]) => key)
+					.map(([key]) => key).join(' ')
 			return item
 		})
 		.join(' ')
