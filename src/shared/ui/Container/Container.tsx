@@ -19,6 +19,7 @@ export function Container({
 			<div
 				style={{
 					width: containerWidth,
+					maxWidth: '1400px'
 				}}
 				className={className ?? ''}
 			>

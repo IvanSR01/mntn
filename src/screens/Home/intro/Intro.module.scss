@@ -1,7 +1,8 @@
 .wrapper {
 	position: relative;
 	width: 100%;
-	height: 200dvh;
+	height: 150dvh;
+	// max-height: 1500px;
 	overflow: hidden;
 
 	.bgBack {
@@ -28,7 +29,7 @@
 		top: 60dvh;
 		left: 0;
 		width: 100%;
-		height: 90dvh;
+		height: 120dvh;
 		z-index: -1;
 		background: linear-gradient(to top, var(--background), transparent);
 
@@ -55,7 +56,7 @@
 	.bgMid,
 	.bgFront {
 		object-fit: cover;
-		transition: transform 0.1s linear;
+		transition: transform 0.4s linear;
 	}
 
 	.intro {

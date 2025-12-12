@@ -1,11 +1,11 @@
 .footer {
-	height: 200px;
+	height: 250px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 40px;
-    padding-bottom: 20px;
-	margin-bottom: 60px;
+    padding-bottom: 40px;
+	box-sizing: content-box;
 
 	.info {
 		min-width: 300px;
@@ -19,12 +19,12 @@
 		}
 		.title {
 			font-family: 'Cormorant Garamond';
-			font-size: clamp(22px, 1vw, 26px);
+			font-size: clamp(22px, 1.5vw, 26px);
 		}
 		.description {
 			margin-top: 23px;
-			font-weight: 600;
-			font-size: clamp(16px, 1vw, 20px);
+			font-weight: 500;
+			font-size: clamp(16px, 1vw, 18px);
 			line-height: 1.5;
 			opacity: 0.85;
 			max-width: 300px;
