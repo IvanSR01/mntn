@@ -1,12 +1,12 @@
 'use client'
 import type { HomeSectionProps } from './HomeSection/HomeSection'
-import { Intro } from './Intro/Intro'
 import styles from './Home.module.scss'
 import dynamic from 'next/dynamic'
 import { Footer } from '@/components/Footer/Footer'
+import { HomeSection } from './HomeSection/HomeSection'
 
-const HomeSection = dynamic(
-	() => import('./HomeSection/HomeSection').then((mod) => mod.HomeSection),
+const Intro = dynamic(
+	() => import('./rIntro/Intro').then((mod) => mod.Intro),
 	{ ssr: false }
 )
 
